@@ -1,0 +1,127 @@
+类和对象的练习题，有代码示例
+1 在ibm.com.testdemo中创建address包并创建Address类，属性有city和street
+2 在ibm.com.testdemo中创建employee包并创建Employee类，属性有id，age, name, gender,Address(前面创建的类)，show方法打印出所有的属性来。
+3 创建Employee对象，并为其设置属性 id=112233,age=24,name=张三，gender=男，创建Address对象，city=江门，street=迎宾大道99号。将张三的信息打印出来。
+
+变量类型的练习题，有代码示例
+1 创建一个testVar类，类中设置八种基本类型的属性，以及一个数组引用的属性，然后将其打印出来，验证一下他们的默认值是多少。
+2 将short类型转成byte类型，
+3 将int类型转成long类型。
+
+
+修饰符的练习题
+1 验证private只能在类内部访问，其他类无法访问被private修饰的变量
+2 验证private 不能修饰类
+3 验证protected 只能作用于当前包，其他包的类无法访问。
+4 验证protected 不能修饰类
+
+
+基本语法的练习题
+1 Java基本语法语句-下面程序会输出什么？
+			public static void main(String args[]) {
+				int i=0,x=3;
+				while(x<9){
+					x+=2; 
+				    x++;
+				    ++i;
+				}
+			System.out.println("i="+i);
+			}
+     答：输出i的值为i=2.
+2 Java基本语法语句-switch 语句能否作用在 byte 上，能否作用在 long 上，能否作用在 String 上?用代码敲一下
+
+
+工具类的练习题
+1 将hello 和 world 拼接在一起，变成 hello world 一句话，可以有几种写法。（提示: 加号,concat,StringBuilder）
+2 StringBuilder类是StringBuffer类的替代类，两者的共同点是都是可变长度字符串，其中线程安全的类是______。
+3 创建一个int数组，并用for和foreach两种方式遍历打印出来
+4 获取当前的日期，并对当前的日期格式化为 yyyy-MM-dd hh:mm:ss
+
+异常的练习题，问题2有代码示例
+1 自己创建一个异常并抛出来
+2 finally和return执行顺序？
+3 final, finally的区别
+
+
+jvm的练习题
+1 jdk和jre的区别是什么？
+2 jvm由哪几部分组成？
+
+
+晚上的作业
+1 什么是类，对象，他们的关系是怎么样的。
+	类是一个模板，它描述一类对象的行为和状态。
+	类是一个抽象概念，对象是类的一个具体，有状态和行为。
+                类是一个静态的概念 类本身不携带任何数据。
+                对象是一个动态的概念。
+	
+
+2 构造方法有几种？请简单说一下
+	无参构造方法、有参构造方法
+
+3 数据类型有几种？以及每种的默认值是多少?请简单说一下
+	基本数据类型：
+		byte：0
+		short：0
+		int：0
+		long：0L
+		float：0.0F
+		double：0.0
+		boolean：false
+		char：\u0000
+
+	引用数据类型：
+		默认值：null
+
+4 强制类型转换需要注意什么？
+	
+
+5 变量有几种？他们的作用范围是什么？
+	局部变量、成员变量
+	局部变量的作用范围在方法内
+	成员变量的作用范围在构造方法，实例方法
+
+6 访问修饰符有几种？他们的作用范围是什么？
+	public：可以用在任何地方
+	protect：适用范围：类中、同包、子类
+	private：适用范围：类中
+
+7 static 修饰的类，变量，方法和普通对象的类，变量，方法有什么区别
+	
+
+8 a++ 和 ++a的区别是什么
+	a++：是先调用，后自加1
+	++a：先自加1，后调用
+
+9 运算符优先级最高的是哪个？
+	由高到低1、（）[]
+                             2、！+(正) -（负）
+                             3、++ --
+                             4、* / %
+	             5、+ -
+                             6、大小关系，按位与按位或，逻辑与逻辑或，条件运算，赋值运算，位赋值运算
+
+10 循环语句有几种？请简单列一下
+	for、while、do..while、which
+
+11 if条件语句可以有多个else吗？
+	不可以
+
+12 continue 和 break 在循环语句中的区别？
+	continue是跳过当前循环，执行下一个循环
+	break是直接跳出当前全部循环
+
+13 StringBuilder 与StringBuffer的区别？
+	StringBuider是线程不安全的
+	StringBuffer是线程安全的
+
+14 final, finally的区别？
+	final修饰的变量或方法是不可改变的或重写的
+	finally下的语句是一定会执行的
+
+15 jvm由哪几部分组成
+	栈、堆、方法区内存、gc
+
+16 用java语言描述你周围常见的事物？例如一只猫，一条狗，一座大楼，空调，手机，等等。
+                                      
+17 自己手动画一下jvm的内存分部图。
